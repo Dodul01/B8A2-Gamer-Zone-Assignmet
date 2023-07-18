@@ -1,6 +1,191 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Work Sans', sans-serif;
 }
+
+/**Common CSS Starts Here**/
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 48px;
+  padding: 15px 25px;
+}
+
+.pink-btn {
+  background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+  color: white;
+  font-weight: 700;
+}
+
+.blue-btn {
+  background: #4EC5F7;
+  color: white;
+  font-weight: 700;
+}
+
+/**Common CSS Ends Here**/
+
+/**Nav Bar CSS Starts Here**/
+
+nav {
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.nav-content {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo span {
+  color: #FF42A5;
+}
+
+.nav-links-container ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-links-container ul li a {
+  color: #3C354F;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.10);
+}
+
+.social-btn i {
+  margin: 0px 5px;
+}
+
+/**Nav Bar CSS Ends Here**/
+
+/**Banner Section CSS Starts Here**/
+.banner-content {
+  display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.banner-info {
+  background-image: url('../images/Group 14.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 700px;
+  width: 100%;
+  padding-left: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner-info h2 {
+  color: #0B0223;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.banner-info h1 {
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-info li{
+  margin: 10px 0px;
+}
+
+.banner-info i{
+  margin-right: 10px;
+}
+
+.banner-info a {
+  color: #534C64;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: lowercase;
+  padding: 0px 10px;
+}
+
+.banner-btn-container{
+  margin-top: 20px;
+}
+/**Banner Section CSS Ends Here**/
+
+/**Responsive CSS For Mobile Starts Here**/
+
+@media screen and (max-width: 576px) {
+
+  /**Nav Bar Css Starts Here**/
+  .nav-content {
+    flex-direction: column;
+  }
+
+  .nav-links-container ul {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .nav-links-container ul li a {
+    margin-bottom: 20px;
+  }
+
+  /**Nav Bar Css Ends Here**/
+
+  /**Banner Section CSS Starts Here**/
+  .banner-content {
+    flex-direction: column-reverse;
+  }
+  
+  .banner-info {
+    height: auto;
+    margin-top: 50px;
+    padding-left: 10px;
+  }
+  .banner-image img{
+    width: 100%;
+    padding: 20px;
+  }
+  /**Banner Section CSS Ends Here**/
+}
+
+/**Responsive CSS For Mobile Ends Here**/
