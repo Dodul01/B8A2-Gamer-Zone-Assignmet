@@ -238,15 +238,17 @@ nav {
   width: 100%;
 }
 
-.my-cart{
+.my-cart {
   position: relative;
 }
-.my-cart:hover .over-lay{
+
+.my-cart:hover .over-lay {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.over-lay{
+
+.over-lay {
   display: none;
   position: absolute;
   top: 0px;
@@ -258,14 +260,16 @@ nav {
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-.overlay-content{
+
+.overlay-content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   color: white;
 }
-.over-lay-icon{
+
+.over-lay-icon {
   font-size: 50px;
 }
 
@@ -309,6 +313,52 @@ nav {
 }
 
 /**Play online game section end here**/
+
+/**Career Section Starts Here**/
+.career-section {
+  margin-top: 150px;
+  background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+
+.career-content {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 10px;
+}
+
+.career-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.career-content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.career-list-container{
+  margin-top: 30px;
+}
+.career-list{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+.career-content button {
+  background: #FFF;
+  font-size: 16px;
+  margin: 20px 0px;
+}
+
+/**Career Section Ends Here**/
 
 /**Game Button Section Start Here**/
 .game-btn-section {
@@ -462,6 +512,31 @@ footer {
 
   /**Play Online Section Ends Here**/
 
+
+  /**Career Section Starts Here**/
+
+  .career-content {
+    flex-direction: column;
+    margin-top: -200px;
+    margin-bottom: 50px;
+  }
+
+  .career-content h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .career-content p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .career-img-container img {
+    width: 100%;
+  }
+
+  /**Career Section Ends Here**/
+
   .game-btn-section {
     margin-top: 0px;
   }
@@ -544,10 +619,12 @@ footer {
     gap: 30px;
     grid-template-columns: 1fr;
   }
+
   .online-gaming-header h1 {
     font-size: 28px;
     font-weight: 700;
   }
+
   .game-card {
     margin: 20px;
   }
@@ -583,6 +660,31 @@ footer {
   }
 
   /**Play Online Section Start Here**/
+
+  /**Career Section Starts Here**/
+
+  .career-content {
+    flex-direction: column;
+    margin-top: -200px;
+    margin-bottom: 50px;
+  }
+
+  .career-content h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .career-content p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .career-img-container img {
+    width: 100%;
+  }
+
+  /**Career Section Ends Here**/
+
   /**Game Button Container Stats Here**/
   .game-btn-section {
     margin-top: 0px;
