@@ -252,21 +252,28 @@ nav {
   min-width: 50%;
   position: relative;
 }
-.play-online-img-2{
+
+.play-online-img-2 {
   position: absolute;
   bottom: -20%;
   right: 50px;
 }
+
 .play-online-text-container {
   min-height: 300px;
   min-width: 50%;
 }
 
+.play-online-text-container h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
 /**Play online game section end here**/
 
+/**Game Button Section Start Here**/
 
-
-
+/**Game Button Section End Here**/
 
 
 
@@ -286,6 +293,7 @@ nav {
 
   /**Banner Section Ends Here**/
 
+
   /**We Are Gammer Section Starts Here**/
   .we-are-gamer-content {
     flex-direction: column;
@@ -297,6 +305,7 @@ nav {
 
   .we-are-gamer-info {
     text-align: center;
+    padding-right: 0px;
   }
 
   .we-are-gamer-info br {
@@ -309,11 +318,23 @@ nav {
 
   /**We Are Gammer Section Ends Here**/
 
+  /**Play Online Section Start Here**/
+
   .online-gaming-card-container {
     justify-content: center;
     gap: 30px;
     grid-template-columns: repeat(2, 300px);
   }
+
+  .play-online-game-content {
+    flex-direction: column;
+  }
+
+  .play-online-text-container {
+    margin-top: 200px;
+  }
+
+  /**Play Online Section Ends Here**/
 }
 
 /**Responsive CSS For Tablet Ends Here**/
@@ -368,6 +389,7 @@ nav {
 
   .we-are-gamer-info {
     text-align: center;
+    padding-right: 0px;
   }
 
   .we-are-gamer-info br {
@@ -393,26 +415,33 @@ nav {
 
   /**Online Gaming Section Ends Here**/
 
+  /**Play Online Section Start Here**/
 
   .play-online-img-1 {
     width: 300px;
   }
 
-  .play-online-img-2{
-    width: 150px;
+  .play-online-img-2 {
+    position: absolute;
+    bottom: 0%;
+    right: -15px;
+    width: 100px;
   }
 
-  .play-online-img-2{
-    position: absolute;
-    bottom: -10%;
-    right: -50px;
-  }
-  .play-online-game-content{
+  .play-online-game-content {
     flex-direction: column;
   }
-  .play-online-text-container{
+
+  .play-online-text-container {
     margin-top: 100px;
   }
-}
 
-/**Responsive CSS For Mobile Ends Here**/
+  .play-online-text-container h1 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  /**Play Online Section Start Here**/
+
+  /**Responsive CSS For Mobile Ends Here**/
+}
