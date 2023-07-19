@@ -188,6 +188,9 @@ nav {
 
 .we-are-gamer-info h2 {
   margin: 10px 0px;
+  text-align: right;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .we-are-gamer-info p {
@@ -217,6 +220,11 @@ nav {
 .online-gaming-header {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.online-gaming-header h1 {
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .online-gaming-card-container {
@@ -272,10 +280,97 @@ nav {
 /**Play online game section end here**/
 
 /**Game Button Section Start Here**/
+.game-btn-section {
+  margin-top: 200px;
+}
+
+.game-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.game-btn {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 80px;
+  border-radius: 50px;
+  background: #FFF;
+  border: 2px solid transparent;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.game-btn:hover {
+  border: 2px solid #F948B2;
+}
 
 /**Game Button Section End Here**/
 
 
+/**Footer Section CSS Start Here**/
+footer {
+  background-color: #0B0223;
+  color: white;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.footer-content {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.footer-content ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-content ul li {
+  padding: 20px;
+}
+
+.footer-icon {
+  color: white;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-icon {
+  font-size: 30px;
+  padding: 40px;
+}
+
+.copy-right-section ul li {
+  color: rgba(255, 255, 255, 0.60);
+}
+
+/**Footer Section CSS Ends  Here**/
 
 /**Responsive CSS For Tablet Starts Here**/
 
@@ -335,6 +430,10 @@ nav {
   }
 
   /**Play Online Section Ends Here**/
+
+  .game-btn-section {
+    margin-top: 0px;
+  }
 }
 
 /**Responsive CSS For Tablet Ends Here**/
@@ -392,6 +491,12 @@ nav {
     padding-right: 0px;
   }
 
+  .we-are-gamer-info h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
   .we-are-gamer-info br {
     display: none;
   }
@@ -408,7 +513,10 @@ nav {
     gap: 30px;
     grid-template-columns: 1fr;
   }
-
+  .online-gaming-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+  }
   .game-card {
     margin: 20px;
   }
@@ -430,6 +538,8 @@ nav {
 
   .play-online-game-content {
     flex-direction: column;
+    margin: 0px;
+    padding: 0px;
   }
 
   .play-online-text-container {
@@ -442,6 +552,24 @@ nav {
   }
 
   /**Play Online Section Start Here**/
+  /**Game Button Container Stats Here**/
+  .game-btn-section {
+    margin-top: 0px;
+  }
 
-  /**Responsive CSS For Mobile Ends Here**/
+  .game-btn {
+    width: 30%;
+    height: 45px;
+    padding: 4px;
+    margin: 4px;
+    font-size: 12px;
+  }
+
+  .game-btn img {
+    height: 40px;
+  }
+
+  /**Game Button Container Ends Here**/
 }
+
+/**Responsive CSS For Mobile Ends Here**/
