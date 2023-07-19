@@ -37,7 +37,24 @@ a {
   font-weight: 700;
 }
 
+.gradient-text {
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-text {
+  color: #534C64;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 /**Common CSS Ends Here**/
+
+.hide{
+  display: none;
+}
 
 /**Nav Bar CSS Starts Here**/
 
@@ -130,11 +147,11 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-.banner-info li{
+.banner-info li {
   margin: 10px 0px;
 }
 
-.banner-info i{
+.banner-info i {
   margin-right: 10px;
 }
 
@@ -146,10 +163,122 @@ nav {
   padding: 0px 10px;
 }
 
-.banner-btn-container{
+.banner-btn-container {
   margin-top: 20px;
 }
+
 /**Banner Section CSS Ends Here**/
+
+
+/**We Are Gammer Starts Section**/
+
+.we-are-gamer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.we-are-gamer-info {
+  text-align: right;
+  margin: 10px;
+  padding-right: 20px;
+}
+
+.we-are-gamer-info h2 {
+  margin: 10px 0px;
+}
+
+.we-are-gamer-info p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.we-are-gamer-info button {
+  margin-bottom: 10px;
+}
+
+.we-are-gamer-info b {
+  color: #534C64;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/**We Are Gammer Section**/
+
+/**Online Gaming Section Starts Here**/
+.online-gaming-section{
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.online-gaming-header{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.online-gaming-card-container{
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+  grid-template-columns: repeat(4, 300px);
+}
+
+.game-card img{
+  width: 100%;
+}
+/**Online Gaming Section Ends Here**/
+
+/**Responsive CSS For Tablet Starts Here**/
+
+@media screen and (max-width: 900px) and (min-width: 576px) {
+
+  /**Banner Section Start Here**/
+  .banner-content {
+    flex-direction: column-reverse;
+  }
+
+  .banner-image img {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /**Banner Section Ends Here**/
+
+  /**We Are Gammer Section Starts Here**/
+  .we-are-gamer-content {
+    flex-direction: column;
+  }
+
+  .we-are-gamer-img-container img {
+    width: 100%;
+  }
+
+  .we-are-gamer-info {
+    text-align: center;
+  }
+
+  .we-are-gamer-info br {
+    display: none;
+  }
+
+  .we-are-gamer-info span br {
+    display: block;
+  }
+
+  /**We Are Gammer Section Ends Here**/
+
+  .online-gaming-card-container{
+    justify-content: center;
+    gap: 30px;
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
+/**Responsive CSS For Tablet Ends Here**/
+
 
 /**Responsive CSS For Mobile Starts Here**/
 
@@ -175,17 +304,53 @@ nav {
   .banner-content {
     flex-direction: column-reverse;
   }
-  
+
   .banner-info {
     height: auto;
     margin-top: 50px;
     padding-left: 10px;
   }
-  .banner-image img{
+
+  .banner-image img {
     width: 100%;
     padding: 20px;
   }
+
   /**Banner Section CSS Ends Here**/
+
+  /**We are gamer content section starts here**/
+  .we-are-gamer-content {
+    flex-direction: column;
+  }
+
+  .we-are-gamer-img-container img {
+    width: 100%;
+  }
+
+  .we-are-gamer-info {
+    text-align: center;
+  }
+
+  .we-are-gamer-info br {
+    display: none;
+  }
+
+  .we-are-gamer-info span br {
+    display: block;
+  }
+
+  /**We are gamer content section Ends here**/
+
+  /**Online Gaming Section Starts Here**/
+  .online-gaming-card-container{
+    justify-content: center;
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+  .game-card{
+    margin: 20px;
+  }
+  /**Online Gaming Section Ends Here**/
 }
 
 /**Responsive CSS For Mobile Ends Here**/
