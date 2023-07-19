@@ -52,7 +52,7 @@ a {
 
 /**Common CSS Ends Here**/
 
-.hide{
+.hide {
   display: none;
 }
 
@@ -209,27 +209,66 @@ nav {
 /**We Are Gammer Section**/
 
 /**Online Gaming Section Starts Here**/
-.online-gaming-section{
+.online-gaming-section {
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.online-gaming-header{
+.online-gaming-header {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.online-gaming-card-container{
+.online-gaming-card-container {
   display: grid;
   justify-content: center;
   gap: 30px;
   grid-template-columns: repeat(4, 300px);
 }
 
-.game-card img{
+.game-card img {
   width: 100%;
 }
+
 /**Online Gaming Section Ends Here**/
+
+/**Play online game section start here**/
+.play-online-game-container {
+  margin: 20px 0px;
+}
+
+.play-online-game-content {
+  min-height: 400px;
+  max-width: 1920px;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.play-online-img-container {
+  min-height: 300px;
+  min-width: 50%;
+  position: relative;
+}
+.play-online-img-2{
+  position: absolute;
+  bottom: -20%;
+  right: 50px;
+}
+.play-online-text-container {
+  min-height: 300px;
+  min-width: 50%;
+}
+
+/**Play online game section end here**/
+
+
+
+
+
+
 
 /**Responsive CSS For Tablet Starts Here**/
 
@@ -270,7 +309,7 @@ nav {
 
   /**We Are Gammer Section Ends Here**/
 
-  .online-gaming-card-container{
+  .online-gaming-card-container {
     justify-content: center;
     gap: 30px;
     grid-template-columns: repeat(2, 300px);
@@ -342,15 +381,38 @@ nav {
   /**We are gamer content section Ends here**/
 
   /**Online Gaming Section Starts Here**/
-  .online-gaming-card-container{
+  .online-gaming-card-container {
     justify-content: center;
     gap: 30px;
     grid-template-columns: 1fr;
   }
-  .game-card{
+
+  .game-card {
     margin: 20px;
   }
+
   /**Online Gaming Section Ends Here**/
+
+
+  .play-online-img-1 {
+    width: 300px;
+  }
+
+  .play-online-img-2{
+    width: 150px;
+  }
+
+  .play-online-img-2{
+    position: absolute;
+    bottom: -10%;
+    right: -50px;
+  }
+  .play-online-game-content{
+    flex-direction: column;
+  }
+  .play-online-text-container{
+    margin-top: 100px;
+  }
 }
 
 /**Responsive CSS For Mobile Ends Here**/
