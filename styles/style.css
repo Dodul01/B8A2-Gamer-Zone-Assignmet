@@ -645,13 +645,16 @@ footer {
   }
 
   .play-online-game-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 0px;
     padding: 0px;
   }
 
   .play-online-text-container {
-    margin-top: 100px;
+    margin-top: 0px;
+    padding: 5px;
+    min-height: 0;
+    margin-bottom: 50px
   }
 
   .play-online-text-container h1 {
@@ -665,7 +668,7 @@ footer {
 
   .career-content {
     flex-direction: column;
-    margin-top: -200px;
+    margin-top: 0px;
     margin-bottom: 50px;
   }
 
